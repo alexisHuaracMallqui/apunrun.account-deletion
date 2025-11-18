@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitar Eliminación de Cuenta - APU RUN</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        h1, h2, h3 { color: #222; margin-top: 1.5em; }
+        h1 { border-bottom: 3px solid #FF3B30; padding-bottom: 10px; color: #FF3B30; }
+        h2 { border-left: 4px solid #FF3B30; padding-left: 10px; }
+        .warning { 
+            background-color: #FFE5E5; 
+            padding: 15px; 
+            border-left: 4px solid #FF3B30; 
+            margin: 15px 0;
+            border-radius: 4px;
+        }
+        .important { 
+            background-color: #E8F4F8; 
+            padding: 15px; 
+            border-left: 4px solid #007AFF; 
+            margin: 15px 0;
+            border-radius: 4px;
+        }
+        table { 
+            width: 100%; 
+            border-collapse: collapse; 
+            margin: 15px 0; 
+        }
+        th, td { 
+            border: 1px solid #ddd; 
+            padding: 12px; 
+            text-align: left; 
+        }
+        th { 
+            background-color: #f2f2f2; 
+            font-weight: bold; 
+        }
+        .step {
+            background-color: #f0f0f0;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 4px;
+            border-left: 4px solid #34C759;
+        }
+        .step-number {
+            display: inline-block;
+            background-color: #34C759;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 30px;
+            margin-right: 10px;
+            font-weight: bold;
+        }
+        .email-form {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border: 2px solid #007AFF;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        .form-group {
+            margin: 15px 0;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #333;
+        }
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-family: inherit;
+            box-sizing: border-box;
+        }
+        textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+        button {
+            background-color: #007AFF;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        button:hover {
+            background-color: #0051D5;
+        }
+        .email-link {
+            background-color: #f0f0f0;
+            padding: 15px;
+            border-radius: 4px;
+            margin: 20px 0;
+            word-break: break-all;
+        }
+        .data-table {
+            margin: 20px 0;
+        }
+        .retention-short {
+            background-color: #FFF3CD;
+        }
+        .retention-long {
+            background-color: #E2F0FF;
+        }
+        ul, ol {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+        li {
+            margin: 8px 0;
+        }
+        a {
+            color: #007AFF;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .last-updated {
+            font-size: 0.9em;
+            color: #666;
+            margin-top: 30px;
+            padding-top: 15px;
+            border-top: 1px solid #ddd;
+        }
+        .timeline {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 4px;
+            margin: 20px 0;
+        }
+        .status-badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            font-weight: bold;
+            margin: 5px 0;
+        }
+        .status-processing {
+            background-color: #FFF3CD;
+            color: #856404;
+        }
+        .status-deleted {
+            background-color: #D4EDDA;
+            color: #155724;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Solicitud de Eliminación de Cuenta - APU RUN</h1>
+
+<div class="warning">
+    <strong>⚠️ ACCIÓN IRREVERSIBLE</strong><br>
+    La eliminación de tu cuenta es permanente y no se puede deshacer. Todos tus datos serán eliminados según se especifica en esta página.
+</div>
+
+<h2>1. Acerca de APU RUN</h2>
+
+<p>APU RUN es una aplicación móvil de coaching de inteligencia artificial que proporciona planes de entrenamiento personalizados. Esta página te permite solicitar la eliminación completa de tu cuenta y datos asociados.</p>
+
+<p><strong>Desarrollador:</strong> Teita.ai</p>
+<p><strong>Aplicación:</strong> APU RUN (com.ahuaracm.apurun)</p>
+
+---
+
+<h2>2. ¿Qué Significa Eliminar tu Cuenta?</h2>
+
+<div class="important">
+    <strong>Cuando solicites la eliminación de tu cuenta, ocurrirá lo siguiente:</strong>
+</div>
+
+<h3>✅ LO QUE SE ELIMINARÁ:</h3>
+
+<table class="data-table">
+    <tr>
+        <th>Datos Personales</th>
+        <th>Plazo de Eliminación</th>
+    </tr>
+    <tr>
+        <td><strong>Email y Nombre</strong></td>
+        <td><span class="status-badge status-deleted">Eliminado inmediatamente</span></td>
+    </tr>
+    <tr>
+        <td><strong>Foto de Perfil</strong></td>
+        <td><span class="status-badge status-deleted">Eliminado inmediatamente</span></td>
+    </tr>
+    <tr>
+        <td><strong>Contraseña</strong></td>
+        <td><span class="status-badge status-deleted">Eliminado inmediatamente</span></td>
+    </tr>
+    <tr>
+        <td><strong>Documentos de Entrenamientos (PDFs/Imágenes)</strong></td>
+        <td><span class="status-badge status-deleted">Eliminado inmediatamente</span></td>
+    </tr>
+    <tr>
+        <td><strong>Historial de Conversaciones con IA</strong></td>
+        <td><span class="status-badge status-deleted">Eliminado inmediatamente</span></td>
+    </tr>
+    <tr>
+        <td><strong>Planes Generados</strong></td>
+        <td><span class="status-badge status-deleted">Eliminado inmediatamente</span></td>
+    </tr>
+    <tr>
+        <td><strong>Preferencias y Configuración</strong></td>
+        <td><span class="status-badge status-deleted">Eliminado inmediatamente</span></td>
+    </tr>
+    <tr>
+        <td><strong>Datos de Ubicación (si aplica)</strong></td>
+        <td><span class="status-badge status-deleted">Eliminado inmediatamente</span></td>
+    </tr>
+    <tr>
+        <td><strong>Logs de Acceso</strong></td>
+        <td><span class="status-badge status-deleted">Eliminado en 30 días</span></td>
+    </tr>
+    <tr>
+        <td><strong>Cookies y Tokens de Sesión</strong></td>
+        <td><span class="status-badge status-deleted">Eliminado inmediatamente</span></td>
+    </tr>
+</table>
+
+<h3>⚠️ LO QUE SE CONSERVARÁ:</h3>
+
+<table class="data-table">
+    <tr>
+        <th>Datos Conservados</th>
+        <th>Razón</th>
+        <th>Periodo de Retención</th>
+    </tr>
+    <tr class="retention-long">
+        <td><strong>Registros de Transacciones Financieras</strong></td>
+        <td>Requerido por ley (cumplimiento fiscal)</td>
+        <td>6 años desde fecha de transacción</td>
+    </tr>
+    <tr class="retention-long">
+        <td><strong>Facturas y Comprobantes de Pago</strong></td>
+        <td>Requerido por ley (auditoría fiscal)</td>
+        <td>6 años desde fecha de compra</td>
+    </tr>
+    <tr class="retention-long">
+        <td><strong>Disputas o Reclamaciones Pendientes</strong></td>
+        <td>Requerido para resolver conflictos legales</td>
+        <td>Hasta que se resuelva + 1 año adicional</td>
+    </tr>
+    <tr class="retention-long">
+        <td><strong>Información Anónima/Agregada</strong></td>
+        <td>Para análisis estadístico (no identificable)</td>
+        <td>Indefinido (completamente anónima)</td>
+    </tr>
+</table>
+
+---
+
+<h2>3. Pasos para Solicitar Eliminación de Cuenta</h2>
+
+<div class="step">
+    <span class="step-number">1</span>
+    <strong>Opción A: Solicitud Directa desde la App (Recomendado)</strong>
+    <p style="margin-top: 10px;">
+        Abre la aplicación APU RUN y ve a:
+        <br>➜ Configuración / Perfil
+        <br>➜ Opciones de Cuenta
+        <br>➜ Eliminar Cuenta
+        <br>➜ Confirma tu solicitud
+    </p>
+    <p>
+        <strong>Confirmación:</strong> Recibirás un email de confirmación. Haz clic en el enlace para completar la eliminación.
+    </p>
+</div>
+
+<div class="step">
+    <span class="step-number">2</span>
+    <strong>Opción B: Solicitud por Email (Alternativa)</strong>
+    <p style="margin-top: 10px;">
+        Si prefieres, puedes solicitar la eliminación por correo electrónico a:
+    </p>
+    <div class="email-link">
+        <strong>privacy@teita.ai</strong>
+    </div>
+    <p>
+        En tu email, incluye:
+    </p>
+    <ul>
+        <li>Asunto: "Solicitud de Eliminación de Cuenta APU RUN"</li>
+        <li>Tu email de cuenta registrada</li>
+        <li>Tu nombre de usuario (opcional)</li>
+        <li>Confirmación: "Solicito la eliminación permanente de mi cuenta y todos mis datos"</li>
+    </ul>
+</div>
+
+<div class="step">
+    <span class="step-number">3</span>
+    <strong>Formulario de Solicitud en Línea (Alternativa)</strong>
+    <p style="margin-top: 10px;">
+        Completa el formulario a continuación:
+    </p>
+</div>
+
+---
+
+<h2>4. Formulario de Solicitud de Eliminación</h2>
+
+<div class="email-form">
+    <form id="deleteAccountForm">
+        <div class="form-group">
+            <label for="email">Email de tu Cuenta APU RUN *</label>
+            <input 
+                type="email" 
+                id="email" 
+                name="email" 
+                required 
+                placeholder="tu-email@ejemplo.com"
+            >
+            <small>El email con el que te registraste en APU RUN</small>
+        </div>
+
+        <div class="form-group">
+            <label for="username">Nombre de Usuario (Opcional)</label>
+            <input 
+                type="text" 
+                id="username" 
+                name="username" 
+                placeholder="Tu nombre de usuario"
+            >
+        </div>
+
+        <div class="form-group">
+            <label for="reason">Razón de Eliminación (Opcional)</label>
+            <textarea 
+                id="reason" 
+                name="reason" 
+                placeholder="Por favor comparte por qué deseas eliminar tu cuenta (esto nos ayuda a mejorar)"
+            ></textarea>
+        </div>
+
+        <div class="form-group">
+            <label>
+                <input 
+                    type="checkbox" 
+                    id="confirmation" 
+                    name="confirmation" 
+                    required
+                >
+                Confirmo que deseo eliminar permanentemente mi cuenta y todos mis datos asociados. Entiendo que esta acción es irreversible.
+            </label>
+        </div>
+
+        <button type="submit">Enviar Solicitud de Eliminación</button>
+    </form>
+
+    <div id="formMessage" style="margin-top: 20px; display: none;"></div>
+</div>
+
+---
+
+<h2>5. Timeline de Eliminación</h2>
+
+<div class="timeline">
+    <h3>¿Cuánto tiempo tarda la eliminación?</h3>
+    
+    <table>
+        <tr>
+            <th>Evento</th>
+            <th>Plazo</th>
+            <th>Estado</th>
+        </tr>
+        <tr>
+            <td><strong>Recibimos tu solicitud</strong></td>
+            <td>Inmediato</td>
+            <td><span class="status-badge status-processing">En procesamiento</span></td>
+        </tr>
+        <tr>
+            <td><strong>Verificación de identidad</strong></td>
+            <td>1-2 días hábiles</td>
+            <td><span class="status-badge status-processing">En procesamiento</span></td>
+        </tr>
+        <tr>
+            <td><strong>Eliminación de datos personales</strong></td>
+            <td>3-5 días hábiles</td>
+            <td><span class="status-badge status-deleted">Completado</span></td>
+        </tr>
+        <tr>
+            <td><strong>Confirmación por email</strong></td>
+            <td>5-7 días hábiles</td>
+            <td><span class="status-badge status-deleted">Completado</span></td>
+        </tr>
+        <tr>
+            <td><strong>Eliminación de logs (30 días después)</strong></td>
+            <td>30 días</td>
+            <td><span class="status-badge status-deleted">Programado</span></td>
+        </tr>
+    </table>
+
+    <div class="important">
+        <strong>📧 Importante:</strong> Te enviaremos confirmación por email cuando se haya procesado tu solicitud. Revisa tu bandeja de entrada y carpeta de spam.
+    </div>
+</div>
+
+---
+
+<h2>6. Derechos del Usuario - GDPR/CCPA</h2>
+
+<h3>Tu Derecho al Olvido</h3>
+
+<p>Bajo las regulaciones de privacidad moderna (GDPR, CCPA, LGPD), tienes derecho a:</p>
+
+<ul>
+    <li><strong>Derecho al Olvido:</strong> Solicitar que eliminemos todos tus datos personales</li>
+    <li><strong>Acceso a Datos:</strong> Obtener una copia de tus datos antes de eliminarlos</li>
+    <li><strong>Portabilidad:</strong> Recibir tus datos en formato legible</li>
+    <li><strong>Rectificación:</strong> Corregir datos inexactos</li>
+</ul>
+
+<p>Para solicitar cualquiera de estos derechos, contacta a: <strong>privacy@teita.ai</strong></p>
+
+---
+
+<h2>7. Preguntas Frecuentes</h2>
+
+<h3>¿Se puede revertir la eliminación?</h3>
+<p>❌ <strong>No.</strong> La eliminación es permanente e irreversible. No podremos recuperar tus datos una vez eliminados.</p>
+
+<h3>¿Se elimina la suscripción automáticamente?</h3>
+<p>✅ <strong>Sí.</strong> Al eliminar tu cuenta, todas las suscripciones activas se cancelarán automáticamente. Si existe un periodo de prueba o suscripción activa, NO recibirás reembolso (según términos de servicio).</p>
+
+<h3>¿Qué pasa con mis planes de entrenamiento?</h3>
+<p>❌ Se eliminan todos. Los planes generados, conversaciones con el coach de IA, y documentos cargados serán eliminados permanentemente.</p>
+
+<h3>¿Cuándo se eliminan mis datos de transacciones?</h3>
+<p>Se conservan por <strong>6 años</strong> desde la fecha de compra por requisitos legales/fiscales. Después de 6 años, también se eliminan.</p>
+
+<h3>¿Se elimina mi información de Azure?</h3>
+<p>✅ <strong>Sí.</strong> Todos los documentos almacenados en Azure Blob Storage se eliminarán inmediatamente.</p>
+
+<h3>¿Se elimina mi información de Firebase?</h3>
+<p>✅ <strong>Sí.</strong> Tu perfil, email, Device ID asociado y datos de autenticación se eliminarán de Firebase.</p>
+
+<h3>¿Se elimina mi información de Stripe?</h3>
+<p>⚠️ <strong>Parcialmente.</strong> Tu información de pago se anonimiza en Stripe, pero los registros de transacción se mantienen por 6 años (requisito legal). Consulta la política de privacidad de Stripe para más detalles.</p>
+
+<h3>¿Recibiré confirmación?</h3>
+<p>✅ <strong>Sí.</strong> Te enviaremos un email de confirmación cuando la eliminación esté completa.</p>
+
+<h3>¿Cuál es el plazo máximo de eliminación?</h3>
+<p>Según GDPR y CCPA, el plazo máximo es <strong>30 días</strong> desde tu solicitud. Nosotros completamos en 5-7 días.</p>
+
+---
+
+<h2>8. Protección de Datos Durante la Eliminación</h2>
+
+<div class="important">
+    <strong>🔒 Tu privacidad está protegida durante todo el proceso:</strong>
+    <ul>
+        <li>✅ Verificamos tu identidad antes de eliminar datos</li>
+        <li>✅ Todos los datos se transfieren mediante HTTPS/TLS encriptado</li>
+        <li>✅ Solo el personal autorizado accede a tu solicitud</li>
+        <li>✅ Mantenemos logs de la eliminación por 30 días (después se eliminan)</li>
+        <li>✅ Los datos se eliminan de forma segura (no recuperable)</li>
+    </ul>
+</div>
+
+---
+
+<h2>9. Contacto</h2>
+
+<p>Si tienes preguntas sobre tu solicitud de eliminación de cuenta:</p>
+
+<table>
+    <tr>
+        <th>Tipo de Consulta</th>
+        <th>Email</th>
+        <th>Tiempo de Respuesta</th>
+    </tr>
+    <tr>
+        <td><strong>Solicitud de Eliminación</strong></td>
+        <td>privacy@teita.ai</td>
+        <td>1-2 días hábiles</td>
+    </tr>
+    <tr>
+        <td><strong>Estado de tu Solicitud</strong></td>
+        <td>privacy@teita.ai</td>
+        <td>2-4 horas hábiles</td>
+    </tr>
+    <tr>
+        <td><strong>Preguntas sobre Privacidad</strong></td>
+        <td>privacy@teita.ai</td>
+        <td>1-3 días hábiles</td>
+    </tr>
+    <tr>
+        <td><strong>Soporte General</strong></td>
+        <td>support@teita.ai</td>
+        <td>24-48 horas</td>
+    </tr>
+</table>
+
+---
+
+<h2>10. Información Adicional</h2>
+
+<h3>Autoridades de Protección de Datos</h3>
+
+<p>Si no estás satisfecho con cómo procesamos tu solicitud, puedes presentar una queja ante tu autoridad local:</p>
+
+<ul>
+    <li><strong>🇪🇺 GDPR (EU):</strong> <a href="https://edpb.ec.europa.eu/about-edpb/board/members_en" target="_blank">European Data Protection Board</a></li>
+    <li><strong>🇪🇸 España:</strong> <a href="https://www.aepd.es/" target="_blank">Autoridad de Protección de Datos (AEPD)</a></li>
+    <li><strong>🇺🇸 CCPA (USA):</strong> <a href="https://cppa.ca.gov/" target="_blank">California Privacy Protection Agency</a></li>
+</ul>
+
+<h3>Política de Privacidad Completa</h3>
+
+<p>Para más información sobre cómo procesamos tus datos, consulta nuestra <a href="https://teita.ai/privacy-policy.html" target="_blank">Política de Privacidad Completa</a>.</p>
+
+---
+
+<div class="last-updated">
+    <h3>Versión de este Documento</h3>
+    <ul>
+        <li><strong>Versión:</strong> 1.0</li>
+        <li><strong>Fecha de Publicación:</strong> Noviembre 2025</li>
+        <li><strong>Próxima Revisión:</strong> Mayo 2026</li>
+        <li><strong>Cumplimiento:</strong> GDPR ✅ | CCPA ✅ | LGPD ✅</li>
+    </ul>
+
+    <p style="margin-top: 20px; font-size: 0.9em; color: #666;">
+        <strong>Desarrollador:</strong> Teita.ai<br>
+        <strong>Aplicación:</strong> APU RUN (com.ahuaracm.apurun)<br>
+        <strong>Para solicitudes:</strong> privacy@teita.ai
+    </p>
+</div>
+
+<script>
+// Manejo del formulario
+document.getElementById('deleteAccountForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    const email = document.getElementById('email').value;
+    const username = document.getElementById('username').value;
+    const reason = document.getElementById('reason').value;
+    
+    // Crear mailto link
+    const mailtoLink = `mailto:privacy@teita.ai?subject=Solicitud%20de%20Eliminaci%C3%B3n%20de%20Cuenta%20APU%20RUN&body=Email%20de%20Cuenta:%20${encodeURIComponent(email)}%0AUsuario:%20${encodeURIComponent(username || 'No proporcionado')}%0ARaz%C3%B3n:%20${encodeURIComponent(reason || 'No proporcionada')}%0A%0ASolicito%20la%20eliminaci%C3%B3n%20permanente%20de%20mi%20cuenta%20y%20todos%20mis%20datos%20asociados.`;
+    
+    // Abrir cliente de email
+    window.location.href = mailtoLink;
+    
+    // Mostrar mensaje
+    const messageDiv = document.getElementById('formMessage');
+    messageDiv.style.display = 'block';
+    messageDiv.style.backgroundColor = '#D4EDDA';
+    messageDiv.style.color = '#155724';
+    messageDiv.style.padding = '15px';
+    messageDiv.style.borderRadius = '4px';
+    messageDiv.style.borderLeft = '4px solid #28A745';
+    messageDiv.innerHTML = '<strong>✅ Éxito:</strong> Se abrirá tu cliente de email con la solicitud pre-llenada. Por favor, envía el email.<br><br><strong>Si no se abre automáticamente:</strong> Copia el siguiente email y envía a <strong>privacy@teita.ai</strong><br><br><strong>Asunto:</strong> Solicitud de Eliminación de Cuenta APU RUN<br><strong>Cuerpo:</strong> Email: ' + email + (username ? '<br>Usuario: ' + username : '') + '<br><br>Solicito la eliminación permanente de mi cuenta y todos mis datos asociados.';
+});
+</script>
+
+</body>
+</html>
